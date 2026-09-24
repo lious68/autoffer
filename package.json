@@ -1,0 +1,35 @@
+{
+  "name": "autoffer",
+  "version": "0.5.2",
+  "private": true,
+  "description": "Community-maintained assessment page adapters and a bring-your-own-key Chrome assistant.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "node scripts/build.mjs --watch",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm test && npm run format:check && npm run build",
+    "demo": "node scripts/demo.mjs",
+    "platform:new": "node scripts/new-platform.mjs"
+  },
+  "dependencies": {
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.24",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.25.12",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

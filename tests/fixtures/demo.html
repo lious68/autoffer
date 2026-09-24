@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Autoffer 公开演示题</title>
+    <style>
+      body {
+        max-width: 820px;
+        margin: 48px auto;
+        padding: 0 24px;
+        font:
+          16px/1.8 system-ui,
+          sans-serif;
+        color: #25352d;
+        background: #f5f5ef;
+      }
+      fieldset {
+        margin: 24px 0;
+        padding: 24px;
+        border: 1px solid #d8dfd3;
+        border-radius: 12px;
+        background: #fff;
+      }
+      label {
+        display: block;
+        margin: 8px 0;
+      }
+      .note {
+        background: #e9efdf;
+        padding: 16px;
+        border-radius: 10px;
+      }
+      a {
+        color: #355b46;
+      }
+    </style>
+  </head>
+  <body data-autoffer-demo="v1">
+    <h1>Autoffer · 公开演示题</h1>
+    <p class="note">
+      这些是本项目自编的练习样例，不代表任何校招平台。此页用于多题模板的离线回归；自动模式需要页面上只有一道可见题目。
+    </p>
+    <fieldset data-kind="single">
+      <legend>01 · 语言理解</legend>
+      <p data-material>
+        图书馆通知：本周六只开放一层阅览室，其他区域暂停开放。
+      </p>
+      <h2 data-stem>根据通知，下列哪项说法正确？</h2>
+      <label data-option
+        ><input type="radio" name="q1" /><span data-label>A</span>
+        <span data-text>周六所有区域都开放。</span></label
+      >
+      <label data-option
+        ><input type="radio" name="q1" /><span data-label>B</span>
+        <span data-text>周六可以使用一层阅览室。</span></label
+      >
+      <label data-option
+        ><input type="radio" name="q1" /><span data-label>C</span>
+        <span data-text>图书馆永久关闭其他区域。</span></label
+      >
+    </fieldset>
+    <p id="shared-material">
+      活动说明：参与者可以选择线上或线下参加。报名截止后，主办方会统一发送确认邮件。
+    </p>
+    <fieldset data-kind="multiple">
+      <legend>02 · 材料判断</legend>
+      <h2 data-stem>根据活动说明，以下哪些说法成立？</h2>
+      <label data-option
+        ><input type="checkbox" /><span data-label>A</span>
+        <span data-text>参与方式包括线上参加。</span></label
+      >
+      <label data-option
+        ><input type="checkbox" /><span data-label>B</span>
+        <span data-text>确认邮件在报名截止后统一发送。</span></label
+      >
+      <label data-option
+        ><input type="checkbox" /><span data-label>C</span>
+        <span data-text>所有人必须到现场参加。</span></label
+      >
+    </fieldset>
+    <fieldset data-kind="single">
+      <legend>03 · 图片能力边界</legend>
+      <h2 data-stem>图中展示的是什么形状？</h2>
+      <svg width="100" height="80" role="img" aria-label="一个圆形">
+        <circle cx="50" cy="40" r="28" fill="#355b46" />
+      </svg>
+      <label data-option
+        ><input type="radio" name="q3" /><span data-text>圆形</span></label
+      >
+      <label data-option
+        ><input type="radio" name="q3" /><span data-text>三角形</span></label
+      >
+    </fieldset>
+    <fieldset data-kind="personal">
+      <legend>04 · 个人倾向</legend>
+      <h2 data-stem>哪种工作方式更符合你的偏好？</h2>
+      <label data-option
+        ><input type="radio" name="q4" /><span data-text
+          >独立安排工作。</span
+        ></label
+      >
+      <label data-option
+        ><input type="radio" name="q4" /><span data-text
+          >和团队一起安排工作。</span
+        ></label
+      >
+    </fieldset>
+    <fieldset data-kind="text">
+      <legend>05 · 简答题</legend>
+      <h2 data-stem>请介绍一次你解决问题的经历。</h2>
+      <textarea aria-label="你的经历"></textarea>
+    </fieldset>
+    <fieldset hidden data-kind="single">
+      <h2 data-stem>隐藏题不能被收集</h2>
+    </fieldset>
+  </body>
+</html>

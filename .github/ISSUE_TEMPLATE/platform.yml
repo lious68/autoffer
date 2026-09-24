@@ -1,0 +1,26 @@
+name: 平台适配 / 识题问题
+description: 申请新平台或报告页面结构变化
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: 平台名称和公开域名
+      description: 不要粘贴含 token 或邀请码的考试链接。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 题型与预期识别结果
+      description: 描述题干、选项、共享材料的结构。
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: 脱敏样例和复现步骤
+      description: 只提供有权分享的脱敏 HTML 或自编样例；不要提供候选人信息、Key 或生产题库。
+  - type: input
+    id: version
+    attributes:
+      label: Chrome 版本、扩展版本、验证日期
